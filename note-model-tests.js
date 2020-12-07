@@ -17,3 +17,10 @@ function storesTheText() {
 storesTheText();
 console.log("storesTheText")
 
+function returnsTheText() {
+  var note = new Note("text");
+  assert.isTrue(note.getText() === "text");
+};
+
+returnsTheText();
+console.log("returnsTheText")
