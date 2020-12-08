@@ -1,12 +1,5 @@
 "use strict";
 
-var assert = {
-  isTrue: function(assertionToCheck) {
-    if (!assertionToCheck) {
-      throw new Error("Assertion failed: " + assertionToCheck + " is not truthy");
-    }
-  }
-};
 
 
 function storesTheText() {
@@ -15,7 +8,8 @@ function storesTheText() {
 };
 
 storesTheText();
-console.log("storesTheText")
+console.log("Test1: storesTheText")
+
 
 function returnsTheText() {
   var note = new Note("text");
@@ -23,4 +17,4 @@ function returnsTheText() {
 };
 
 returnsTheText();
-console.log("returnsTheText")
+console.log("Test2: returnsTheText")
