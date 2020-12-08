@@ -8,13 +8,14 @@ function storesTheText() {
 };
 
 storesTheText();
-console.log("Test1: storesTheText")
+console.log("Test: storesTheText")
+
 
 
 function returnsTheText() {
   var note = new Note("text");
-  assert.isTrue(note.getText() === "text");
+  assert.isEqual(note.getText(), "text");
 };
 
 returnsTheText();
-console.log("Test2: returnsTheText")
+console.log("Test: returnsTheText")
