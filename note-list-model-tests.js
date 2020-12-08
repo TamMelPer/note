@@ -11,7 +11,6 @@ function instantiatesWithAnEmptyArray() {
 function storesTheArrayOfNoteModels() {
     var noteList = new NoteList();
     noteList.add("text")
-    console.log(noteList.list[0])
     assert.isTrue(noteList.list[0]["text"] === "text")
   };
 

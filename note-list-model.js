@@ -20,7 +20,6 @@ class NoteList {
 
     getList() {
         for (var i = 0; i < this.list.length; i++) {
-            console.log(this.list[i].text)
             this.array.push(this.list[i].text)
         }
         return this.array.join()
