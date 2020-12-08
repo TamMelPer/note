@@ -10,8 +10,8 @@ function instantiatesWithAnEmptyArray() {
   
 function storesTheArrayOfNoteModels() {
     var noteList = new NoteList();
-    var note = new Note("text");
-    noteList.add(note)
+    noteList.add("text")
+    console.log(noteList.list[0])
     assert.isTrue(noteList.list[0]["text"] === "text")
   };
 
@@ -20,10 +20,8 @@ function storesTheArrayOfNoteModels() {
 
 function returnsAllModelsInTheArray() {
   var noteList = new NoteList();
-  var note1 = new Note("mel");
-  var note2 = new Note("lucy")
-  noteList.add(note1)
-  noteList.add(note2)
+  noteList.add("mel")
+  noteList.add("lucy")
   assert.isTrue(noteList.getList() === "mel,lucy")
 };
 returnsAllModelsInTheArray();

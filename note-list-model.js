@@ -14,8 +14,8 @@ class NoteList {
         this.array = []
     }
 
-    add(note = new Note()) {
-        this.list.push(note);
+    add(xyz) {
+        this.list.push(new Note(xyz));
     }
 
     getList() {
