@@ -9,6 +9,16 @@
 class NoteListView {
     constructor(listView = new NoteList) {
         this.listView = listView 
+        this.array = []
+    }
+
+
+    viewList() {
+        for (var i = 0; i < this.listView.list.length; i++) {
+            this.array.push("<li><div>" + this.listView.list[i].text + "</div></li>")
+        }
+        this.array.unshift("<ul>")
+        this.array.push("</ul>")
+        return this.array.join("")
     }
 }
-
