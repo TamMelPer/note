@@ -6,6 +6,7 @@ function instantiatesWithAnEmptyArray() {
   };
   
   instantiatesWithAnEmptyArray();
+  
   console.log("Test: instantiatesWithAnEmptyArray")
   
 function storesTheArrayOfNoteModels() {
