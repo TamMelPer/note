@@ -15,7 +15,7 @@ class NoteListView {
 
     viewList() {
         for (var i = 0; i < this.listView.list.length; i++) {
-            this.array.push("<li><div>" + this.listView.list[i].text + "</div></li>")
+            this.array.push("<li><div>" + this.listView.list[i].text.slice(0,20) + "</div></li>")
         }
         this.array.unshift("<ul>")
         this.array.push("</ul>")

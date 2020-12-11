@@ -25,15 +25,15 @@
 class NoteController {
     constructor(noteListModel = new NoteList) {
       this.noteListModel = noteListModel
-      this.noteListModel.add("is it you?")
-      this.noteListModel.add("Hi, its me")
+      this.noteListModel.add("hello i am melissa, trying to be 20")
+      this.noteListModel.add("hello i am annabel, trying to be 20")
       this.noteListView = new NoteListView(this.noteListModel)
       this.display = this.noteListView.viewList()
     }
 
     insertsHTML() {
       document.getElementById("app").innerHTML = this.display;
-      console.log(this.display)
+      
     }
 
 }
