@@ -26,20 +26,20 @@ class NoteController {
     constructor(noteListModel = new NoteList) {
       this.noteListModel = noteListModel
       this.noteListModel.add("is it you?")
-      this.noteListModel.add("yes it is")
-      this.noteListView = new NoteListView(noteListModel)
+      this.noteListModel.add("Hi, its me")
+      this.noteListView = new NoteListView(this.noteListModel)
       this.display = this.noteListView.viewList()
-      console.log(this.display)
     }
 
-    insertsHTML(elem) {
-      elem.innerHTML = this.display;
+    insertsHTML() {
+      document.getElementById("app").innerHTML = this.display;
+      console.log(this.display)
     }
 
 }
 
 abc = new NoteController()
-abc.insertsHTML(document.getElementById("app"))
+abc.insertsHTML();
 
 
 
